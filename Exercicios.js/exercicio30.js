@@ -5,19 +5,19 @@
 let vetor = [1,2,5,7,8,8,45,37,23,98,25,12,15,17,90]
 
 function maiorEMenorValor(){
-vetor.forEach(function(index,value){ // usar o for aqui
-   let posicao0 = vetor[0]
-   let maior = posicao0
-   let menor = posicao0
+    let maior;
+    let menor;
+for(let i = 0 ; i < vetor.length; i++){ // usar o for aqui
+    maior = vetor[0]
+    menor = vetor[0]
 
-   if(value > maior){
-     maior = value
-   } else if(value < menor){
-     menor = value
-   }
-
-   
-})
-
-   return `Maior ${maior}, Menor ${menor}`
+   if(vetor[i] > maior){
+     maior = vetor[i]
+   } else if(vetor[i] < menor){
+     menor = vetor[i]
+   } 
 }
+ return `MAIOR: ${maior}, MENOR ${menor}`
+}
+
+console.log(maiorEMenorValor())
