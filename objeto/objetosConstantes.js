@@ -25,7 +25,7 @@ console.log(pessoa.nome)
 
 
 
-const pessoaConstante = Object.freeze({email : "Aduzentos12@gmail.com"})
+const pessoaConstante = Object.freeze({email : "Aduzentos12@gmail.com"}) // previne a modificação de atributos e a adição de novos atributos
 console.log(pessoaConstante)
 console.log(pessoaConstante.email)
 
