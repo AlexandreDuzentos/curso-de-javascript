@@ -17,6 +17,19 @@ console.log(produto.getPreco())
 
 const carro = {preco : 49990 , desc : 0.20}
 
+/*
+A diferença entre o call e o apply é que  o call recebe os argumementos separadamente, e o apply
+recebe os argumentos como um array.
+
+CALL e APPLY : são funções que fazem com o this dentro de uma função aponte para um objeto específicado.
+
+Dentro do call, os parâmetros passados após ao objeto, são passados separadamente e representam os argumentos passados
+para função que foi chamada a partir da função call
+
+Dentro do apply, os parâmetros passados após ao objeto, são passados como um array e representam os argumentos passados
+para função que foi chamada a partir da função call
+ */
+
 console.log(getPreco.call(carro))
 console.log(getPreco.apply(carro))
 

@@ -64,3 +64,17 @@ obj.a = 80 // não sutirá qualquer efeito de moficação de valor no objeto
 obj.z = 12 // não surtirá qualquer efeito de adição de atributos no objeto
 
 console.log(obj)
+
+const person = {
+    first_name: "Alexandre",
+    last_name: "Duzentos",
+    email: "Aduzentos12@gmail.com"
+}
+
+Object.freeze(person)
+
+delete person.first_name // não deletará o atributo do objeto
+
+/**
+ * O object.freeze() congela o objeto, não permitindo modificações em seu estado, apenas acesso a seu estado
+ */
